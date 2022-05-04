@@ -1,0 +1,48 @@
+digraph {
+  rankdir=TB
+  graph [fontname=helvetica ranksep="0.5 equally" nodesep=0.5 pad=0 center=true splines=line]
+  edge [fontname=helvetica fontsize=9 arrowhead=normal arrowsize=0.5]
+  node [fontname=helvetica fontsize=11 shape=box color=black style=filled fillcolor=white fixedsize=true width=1]
+
+  IMPORT  [label="Import\ndata"         color=black fillcolor=pink]
+  CORRECT [label="Correct\nerrors"      color=black fillcolor=pink]
+  CONFIRM [label="Confirm\ncorrections" color=black fillcolor=pink]
+//  USER1   [label="" image="fa-user-r.png" color=none width=0.7 height=0.7]
+//  USER2   [label="" image="fa-user-g.png" color=none width=0.7 height=0.7]
+//  USER3   [label="" image="fa-user-b.png" color=none width=0.7 height=0.7]
+  USER1   [label="" style=filled fillcolor=firebrick2     shape=doublecircle width=0.7 height=0.7]
+  USER2   [label="" style=filled fillcolor=khaki4         shape=doublecircle width=0.7 height=0.7]
+  USER3   [label="" style=filled fillcolor=cornflowerblue shape=doublecircle width=0.7 height=0.7]
+  /*
+  USER4   label=<
+   <table>
+   <tr>
+   <td><img src="fa-user-r.png"/></td>
+   </tr>
+   </table>
+   >]
+*/
+  IMPORT -> CORRECT [label="Suspect\ndata"]
+  
+  CORRECT -> CONFIRM [label="Corrected\nsuspect data"]
+
+  subgraph cluster_00 {
+    label="Source"
+    USER1
+  }
+  subgraph cluster_01 {
+    label="Inspector"
+    USER2
+  }
+  subgraph cluster_02 {
+    label="Guardian"
+    USER3
+  }
+
+  USER4 -> USER1 -> IMPORT
+  USER2 -> CORRECT
+  USER3 -> CONFIRM
+
+
+  {rank=same IMPORT CORRECT CONFIRM}
+}

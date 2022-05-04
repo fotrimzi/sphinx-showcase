@@ -1,0 +1,65 @@
+blockdiag {
+
+   default_shape = note;
+   node_width = 170;
+   node_height = 25;
+   span_width = 40;
+   span_height = 20;
+   # default_fontsize = 10;
+
+   ID [ label = "DIRECTORIES" ];
+
+   BU [ label = "$BACKUP", description = "Backups" ];
+   DA [ label = "$DATA" ];
+   FO [ label = "$FORMDIR", description = "Formulas" ];
+   LO [ label = "$LOGDIR" ];
+   SY [ color = lightblue, label = "$AC_SYSTEM" ];
+
+   C0 [ label = "CONSOLIDATION_C0", description = "Consolidation" ];
+   DV [ label = "Data vendor", stacked ];
+   DVDM [ label = "data model" ];
+   DVLIB [ label = "lib" ];
+   DVNZERO [ label = "NORMALIZATION_N0" ];
+   IN [ label = "interfaces", color = lightgreen ];
+   MIG [ label = "migrate" ]
+   N0 [ label  =  "NORMALIZATION_N0", description  =  "Normalization" ];
+   N0MIG [ label = "migrate" ]
+   SYBIN [ label = "bin" ];
+   SYBU [ label = "backup" ];
+   WO [ label = "$WORKDIR" ];
+
+   ID -- BU
+   ID -- DA
+   ID -- FO
+   ID -- LO
+   ID -- SY
+   ID -- WO
+
+   SY -- SYBU;
+   SY -- SYBIN;
+   SY -- comm;
+   SY -- external_programs;
+   SY -- files;
+   SY -- formulas;
+   SY -- install;
+
+   SY -- IN;
+   SY -- local;
+   SY -- logs;
+   SY -- reports;
+   SY -- tools -- interface -- config;
+
+   IN -- N0;
+   IN -- C0;
+
+   C0 -- bin;
+   C0 -- lib;
+   C0 -- datamodel -- manual;
+
+   IN -- DV;
+   DV -- DVDM;
+   DV -- DVLIB;
+   DV -- DVNZERO -- N0MIG;
+   DV -- MIG;
+
+}
