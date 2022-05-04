@@ -6,7 +6,7 @@ Excel Tables
 
 Test of ``sphinxcontrib.exceltable`` extension:
 
-.. important:: 
+.. important::
 
    Broken by Sphinx 1.3.5
 
@@ -16,11 +16,8 @@ Test of ``sphinxcontrib.exceltable`` extension:
 ..    :header: 1
 
 
-
-|begin-landscape|
-
 *********************************************
-Landscape Mode Long Spreadsheet-sourced Table
+Long Spreadsheet-sourced Table
 *********************************************
 
 The excel file is called :file:`domains.xls` and contains 17495 lines.
@@ -31,6 +28,3 @@ The excel file is called :file:`domains.xls` and contains 17495 lines.
 ..    :header: 1
 ..    :sheet: 0
 ..    :selection: A1:F1500
-
-
-|end-landscape|

@@ -9,6 +9,5 @@ Tables
    custom-class
    list
    csv
-   landscape
    text-wrapping
    refcard

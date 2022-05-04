@@ -4,7 +4,7 @@ Figures and Images
 
 Figures are automatically repositioned by LaTeX to optimise the use of page
 space. Therefore, they will not necessarily appear near any related text. It
-is sensible to use a reference to the relevant figure, or use an image 
+is sensible to use a reference to the relevant figure, or use an image
 instead, which will not 'float'.
 
 .. note::
@@ -55,32 +55,24 @@ This text comes *after* :ref:`right-aligned-scaled-figure`.
 
    Caption with formats: **BOLD**, *ITALICS*, ``CODE``
 
-|begin-landscape|
-
-****************
-Landscape Figure
-****************
-
 
 .. figure:: BBCHD_testcard_big.jpg
 
-   Unscaled Landscape Figure
+   Unscaled Figure
 
 
 .. figure:: BBCHD_testcard_big.jpg
    :align: left
    :scale: 25%
 
-   Left-aligned Scaled (25%) Landscape Figure (``scale=25%``)
+   Left-aligned Scaled (25%) Figure (``scale=25%``)
 
 
 .. figure:: BBCHD_testcard_big.jpg
    :align: right
    :scale: 35%
 
-   Right-aligned Scaled (35%) Landscape Figure (``scale=35%``)
-
-|end-landscape|
+   Right-aligned Scaled (35%) Figure (``scale=35%``)
 
 ******
 Images
