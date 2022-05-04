@@ -3,12 +3,12 @@ Sphinx Test
 ###################
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
 
    introduction
-   formatting-roles
+   formatting
    indents
-   references-standard
+   references
    figures-images
    graphviz
    blockdiag
