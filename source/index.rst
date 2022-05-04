@@ -9,7 +9,7 @@ Sphinx Test
    formatting
    indents
    references
-   figures-images
+   images
    graphviz
    blockdiag
    math

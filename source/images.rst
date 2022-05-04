@@ -1,11 +1,10 @@
-##################
-Figures and Images
-##################
+######
+Images
+######
 
-Figures are automatically repositioned by LaTeX to optimise the use of page
-space. Therefore, they will not necessarily appear near any related text. It
-is sensible to use a reference to the relevant figure, or use an image
-instead, which will not 'float'.
+Figures are images with captions.
+
+In PDFs, figures are automatically repositioned by LaTeX to optimise the use of page space. Therefore, they will not necessarily appear near any related text. It is sensible to use a reference to the relevant figure, or use an image instead, which will not 'float'.
 
 .. note::
 
