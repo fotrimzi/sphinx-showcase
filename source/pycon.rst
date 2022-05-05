@@ -1,20 +1,28 @@
 ###################
-Running Python Code
+Running Code
 ###################
 
-Requires ``pycon`` and ``autorun`` extensions from ``sphinxcontrib``.
+*****
+Shell
+*****
 
-**Usage**
+.. runblock:: console
 
-.. code-block:: rst
-
-   .. runblock:: pycon
-
-      >>> for i in range(5):
-      ...    print i
+   $ date
 
 
-.. .. runblock:: pycon
-..
-..    >>> for i in range(5):
-..    ...    print i
+******
+Python
+******
+
+.. runblock:: pycon
+
+   >>> for i in range(5):
+   ...     print(i)
+
+
+
+
+.. seealso::
+
+   https://pypi.org/project/sphinx-autorun/

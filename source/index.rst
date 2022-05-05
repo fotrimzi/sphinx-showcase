@@ -7,6 +7,7 @@ Sphinx Test
 
    introduction
    formatting
+   sections
    indents
    references
    images
@@ -15,10 +16,7 @@ Sphinx Test
    math
    footnotes
    admonitions
-   code-blocks
+   code
+   tables
    pycon
-   spell-check
-   trademark-copyright
-   tables/index
-   sections
    appendix/index

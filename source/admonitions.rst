@@ -1,20 +1,12 @@
-#############################
-Admonitions and Other Inserts
-#############################
+###########
+Admonitions
+###########
 
-The list of possibilities is `here <http://docutils.sourceforge.net/docs/ref/rst/directives.html#admonitions>`_.
-
-As these render identically in PDF, they have been customised with different
-colours to draw attention. In HTML formats, the standard scheme has been kept.
-
-****
-Mild
-****
+`Reference <http://docutils.sourceforge.net/docs/ref/rst/directives.html#admonitions>`_.
 
 .. note::
 
-   A note.
-
+   Note
 
 .. tip::
 
@@ -32,10 +24,6 @@ Mild
 
    Attention
 
-********
-Moderate
-********
-
 .. warning::
 
    Warning
@@ -43,10 +31,6 @@ Moderate
 .. caution::
 
    Caution
-
-******
-Strong
-******
 
 .. danger::
 
@@ -56,18 +40,14 @@ Strong
 
    Error
 
-*****
-Boxes
-*****
+.. admonition:: General purpose admonition
 
-.. admonition:: A General-Purpose Admonition
+   Admonition
 
-   An admonition.
+.. topic:: Topic box
 
-.. topic:: A topic box
+   Topic box
 
-   A topic box.
-
-.. sidebar:: A Sidebar
+.. sidebar:: Sidebar
 
    In HTML formats, this is a sidebar.

@@ -1,0 +1,38 @@
+blockdiag {
+
+   default_shape = note;
+   node_width = 170;
+   node_height = 25;
+   span_width = 40;
+   span_height = 20;
+   # default_fontsize = 10;
+
+   ID [ label = "root" ];
+
+   BU [ label = "BACKUP", description = "Backups" ];
+   DA [ label = "DATA" ];
+   LO [ label = "LOGDIR" ];
+   SY [ label = "SYSTEM", color = lightblue ];
+
+   DV [ label = "Data", stacked ];
+   IN [ label = "interfaces", color = lightgreen ];
+   SYBIN [ label = "bin" ];
+   SYBU [ label = "backup" ];
+   WO [ label = "WORKDIR" ];
+
+   ID -- BU
+   ID -- DA
+   ID -- LO
+   ID -- SY
+   ID -- WO
+   ID -- IN
+   ID -- DV
+
+   SY -- SYBU;
+   SY -- SYBIN;
+   SY -- files;
+   SY -- install;
+   SY -- local;
+   SY -- logs;
+
+}

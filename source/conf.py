@@ -14,13 +14,11 @@
 # import sys
 # sys.path.insert(0, os.path.abspath('.'))
 
-
 # -- Project information -----------------------------------------------------
 
-project = 'Sphinx Demo'
+project = 'Sphinx Showcase'
 copyright = ''
-author = 'P. A. Jacobs'
-
+author = 'fotrimzi'
 
 # -- General configuration ---------------------------------------------------
 
@@ -31,10 +29,11 @@ extensions = [
     'sphinx.ext.todo',
     'sphinx.ext.graphviz',
     'sphinxcontrib.blockdiag',
+    'sphinx_autorun', # For 'runblock' directives
 ]
 
 # Add any paths that contain templates here, relative to this directory.
-templates_path = ['_templates']
+#templates_path = ['_templates']
 
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.

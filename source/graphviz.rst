@@ -1,10 +1,10 @@
-########################
-Graphs with ``graphviz``
-########################
+############
+``graphviz``
+############
 
-***********************************
-Simple Directed Graph (``digraph``)
-***********************************
+******
+Inline
+******
 
 .. graphviz::
 
@@ -13,17 +13,17 @@ Simple Directed Graph (``digraph``)
 
       node [shape=box fontsize=9];
 
-      basic [label="Basic"];
-      norm  [label="Normalized"];
-      cons  [label="Consolidated"];
+      one [label="One"];
+      two  [label="Two"];
+      tre  [label="Three"];
 
-      basic -> norm -> cons;
+      one -> two -> tre;
    }
 
 
-***********************************
-External Graph with Embedded Images
-***********************************
+********
+External
+********
 
-.. graphviz:: four-eyes-1.dot
-   :caption: The Four-eyes Roles
+.. graphviz:: _img/graph.dot
+   :caption: Graph caption
